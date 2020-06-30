@@ -4,12 +4,11 @@ import java.util.List;
 public class Student {
 
     private String name;
-    private int id;
+    private long id;
     private int grade;
+    private List<Integer> grades = new ArrayList<>();
 
-    List<Integer> grades = new ArrayList<>();
-
-    public Student(String name, int id){
+    public Student(String name, int id, int[] grades){
 
     }
 
@@ -33,6 +32,7 @@ public class Student {
         }
         return getGradeAverage();
     }
+
 
 
 }
