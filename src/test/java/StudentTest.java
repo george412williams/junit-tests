@@ -6,16 +6,28 @@ import static org.junit.Assert.*;
 
 public class StudentTest {
 
+
+
+    @Before
+    public void setUp(){
+
+    }
+
     @Test
     public void testIfIdIsInitialized(){
-        //assertNotNull(id);
+
+        assertNotNull(Student.id);
     }
 
     @Test
     public void testIfNameIsInitialized(){
-        //assertNotNull(name);
+        assertNotNull(Student.name);
     }
 
+    @Test
+    public void testIfGradeAdded(){
+
+    }
 
 
 }

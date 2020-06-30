@@ -5,12 +5,12 @@ public class Student {
 
     private String name;
     private int id;
+    private int grade;
 
-    ArrayList<Integer> grades = new ArrayList<>();
+    List<Integer> grades = new ArrayList<>();
 
     public Student(String name, int id){
-        this.name = name;
-        this.id = id;
+
     }
 
     // returns the student's id
@@ -23,10 +23,14 @@ public class Student {
     }
     // adds the given grade to the grades list
     public void addGrade(int grade){
-
+        grades.add(grade);
     }
     // returns the average of the students grades
     public double getGradeAverage(){
+        for (int grade : grades) {
+            int sum = 0;
+            sum += grade;
+        }
         return getGradeAverage();
     }
 
