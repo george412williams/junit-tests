@@ -16,6 +16,7 @@ public class StudentTest {
         student1.addGrade(22);
         student1.getName();
         student1.getGradeAverage();
+        student1.getId();
 
     }
 
