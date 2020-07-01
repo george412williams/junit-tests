@@ -24,6 +24,7 @@ public class StudentTest {
     @Test
     public void testHasThreeGrades(){
         //assertEquals(Student.grades.length = 3);
+        Student student3 = new Student();
     }
 
     @Test
@@ -43,6 +44,12 @@ public class StudentTest {
     }
 
     @Test
+    public void testIfNameIsInitialized(){
+
+        //assertNotNull(student1.id);
+    }
+
+    @Test
     public void testIfStudentAdded(){
         //Student getName = new getName();
         //assertArrayEquals();
@@ -52,6 +59,8 @@ public class StudentTest {
     @Test
     public void testIfGradeAdded(){
         //assertNotNull(student1.grades.length = 3);
+        //double mgrad = mgrad.gradAverage(mike.getGrades());
+        //assertEquals(23.4, ...);
     }
 
 
