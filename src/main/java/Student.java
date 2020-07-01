@@ -38,13 +38,13 @@ public class Student {
         grades.add(grade);
     }
 
-    public double getGradeAverage(){
-        for (int grade : grades) {
-            int sum = 0;
-            sum += grade;
-        }
-        return getGradeAverage();
-    }
+//    public double getGradeAverage(){
+//        for (int grade : grades) {
+//            int sum = 0;
+//            sum += grade;
+//        }
+//        return getGradeAverage();
+//    }
 
     public List<Integer> getGrades(){
         return grades;
