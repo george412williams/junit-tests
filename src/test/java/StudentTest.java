@@ -14,17 +14,17 @@ public class StudentTest {
     public void setUp(){
         Student student1  = new Student("Naymoe", 1, new int[]{25, 48});
         student1.addGrade(22);
-        //student1.getName();
+        student1.getName();
         student1.getGradeAverage();
         student1.getId();
-        //Student getName = new getName();
+
 
     }
 
     @Test
     public void testHasThreeGrades(){
-        //assertEquals(Student.grades.length = 3);
-        Student student3 = new Student();
+        Student student3 = new Student(new int[]{25, 48});
+        //assertEquals(Student.getGrades(student3).length = 2);
     }
 
     @Test
