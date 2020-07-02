@@ -24,14 +24,41 @@ public class StudentTest {
     @Test
     public void testHasThreeGrades(){
         Student student3 = new Student(new int[]{25, 48});
-        //assertEquals(Student.getGrades(student3).length = 2);
+        //assertEquals(student3.getGrades().length, 2);
     }
 
     @Test
     public void testAssertEquals() {
         Student student1  = new Student("Naymoe", 1, new int[]{25, 48});
-        assertEquals(student1.getName(), null);
-        //passing right now bc of type error and stackoverflow on getAvg
+        assertEquals(student1.getName(), "Naymoe");
+        Student studentJ = new Student("John", 1L, new int[]{22, 55});
+        assertEquals("John", studentJ.getName());
+        assertTrue(studentJ.getGrades().isEmpty());
+        //set the values inn he constructors
+        //nullpointer exception
+    }
+
+    @Test
+    public void testIfStudentAdded(){
+        //Student getName = new getName();
+        //assertArrayEquals();
+        //assertNotNull(student1.name);
+        Student student1  = new Student("Naymoe", 1, new int[]{25, 48});
+        student1.addGrade(100);
+        assertEquals(1, student1.getGrades().size());
+        //assertEquals(100, student1.getGrades());
+        //length/size, array vs list
+    }
+
+    @Test
+    public void testIfGradeAvgWks(){
+        Student student1  = new Student("Naymoe", 1, new int[]{25, 48});
+        //double mgrad = mgrad.gradAverage(mike.getGrades());
+        student1.addGrade(100);
+        assertEquals(100, student1.getGradeAverage(), 0);
+        //important here to have mult assertions
+        student1.addGrade(0);
+        assertEquals(50, student1.getGradeAverage(), 0);
     }
 
     @Test
@@ -40,30 +67,7 @@ public class StudentTest {
     }
 
     @Test
-    public void testIfIdIsInitialized(){
-
-        //assertNotNull(student1.id);
-    }
-
-    @Test
     public void testIfNameIsInitialized(){
-
         //assertNotNull(student1.id);
     }
-
-    @Test
-    public void testIfStudentAdded(){
-        //Student getName = new getName();
-        //assertArrayEquals();
-        //assertNotNull(student1.name);
-    }
-
-    @Test
-    public void testIfGradeAdded(){
-        //assertNotNull(student1.grades.length = 3);
-        //double mgrad = mgrad.gradAverage(mike.getGrades());
-        //assertEquals(23.4, ...);
-    }
-
-
 }

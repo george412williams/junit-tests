@@ -5,21 +5,20 @@ public class Student {
 
     private String name;
     private long id;
-    private int grade;
+    private double grade;
     private List<Integer> grades = new ArrayList<>();
 
-    //CONSTRUCTORS
-    public Student(String name, int id, int[] grades){
-
+    //CONSTRUCTOR
+    public Student(String name, long id, int[] grades){
+        this.name = name;
+        this.id = id;
+        //need to set arraylist otherwise nullpointer exception
+        this.grades = new ArrayList<>();
+        //do not necessarily need the 3rd param...
     }
 
-    public Student(){
-
-    }
-
-    public Student(int[] grades){
-
-    }
+    //CONSTRUCTOR FOR SPECIFIC TEST
+    public Student(int[] grades){}
 
     //GTRS/STRS
     public long getId(){
@@ -38,13 +37,15 @@ public class Student {
         grades.add(grade);
     }
 
-//    public double getGradeAverage(){
-//        for (int grade : grades) {
-//            int sum = 0;
-//            sum += grade;
-//        }
-//        return getGradeAverage();
-//    }
+    public double getGradeAverage(){
+        //set it outside, just move it
+        double sum = 0;
+        for (int grade : grades) {
+            sum += grade;
+        }
+        return sum/grades.size();
+        //needed size not length bc is a List not Array
+    }
 
     public List<Integer> getGrades(){
         return grades;
