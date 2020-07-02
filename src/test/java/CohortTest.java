@@ -34,6 +34,9 @@ public class CohortTest {
         cohortWithStudents.addStudent(student2);
         cohortWithStudents.addStudent(student3);
         assertNotSame(student2, cohortWithStudents.toString());
+        //try notemptynull
+        assertNotNull(cohortWithStudents);
+
     }
 
     @Test
