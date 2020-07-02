@@ -25,7 +25,6 @@ public class CohortTest {
     public void testAddStudent() {
         cohortWithNone.addStudent(student1);
         assertEquals(1, cohortWithNone.getStudents().size());
-
         cohortWithSingleton.addStudent(student2);
     }
 
@@ -35,7 +34,6 @@ public class CohortTest {
         cohortWithStudents.addStudent(student2);
         cohortWithStudents.addStudent(student3);
         assertNotSame(student2, cohortWithStudents.toString());
-
     }
 
     @Test
@@ -52,7 +50,6 @@ public class CohortTest {
     public void testFindStudentById(){
         cohortWithStudents.addStudent(student1);
         cohortWithStudents.addStudent(student2);
-        //assertEquals("Bingo", cohortWithStudents.findStudentById(2));
-
+        assertEquals("Bingo", cohortWithStudents.findStudentById(2));
     }
 }
