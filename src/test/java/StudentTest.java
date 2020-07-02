@@ -8,17 +8,11 @@ import static org.junit.Assert.*;
 
 public class StudentTest {
 
-
-
     @Before
     public void setUp(){
         Student student1  = new Student("Naymoe", 1);
         student1.addGrade(22);
-        //student1.getName();
-        //student1.getGradeAverage();
         student1.getId();
-
-
     }
 
     @Test
@@ -40,14 +34,9 @@ public class StudentTest {
 
     @Test
     public void testIfStudentAdded(){
-        //Student getName = new getName();
-        //assertArrayEquals();
-        //assertNotNull(student1.name);
         Student student1  = new Student("Naymoe", 1);
         student1.addGrade(100);
         assertEquals(1, student1.getGrades().size());
-        //assertEquals(100, student1.getGrades());
-
     }
 
     @Test
@@ -61,13 +50,4 @@ public class StudentTest {
         assertEquals(50, student1.getGradeAverage(), 0);
     }
 
-    @Test
-    public void testIsEmpty(){
-        //assertTrue(student1.name.isEmpty, false);
-    }
-
-    @Test
-    public void testIfNameIsInitialized(){
-        //assertNotNull(student1.id);
-    }
 }

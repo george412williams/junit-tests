@@ -51,6 +51,10 @@ public class Student {
         return grades;
     }
 
+    public String findStudentById(long num){
+        return name;
+    }
+
 
 
 }
