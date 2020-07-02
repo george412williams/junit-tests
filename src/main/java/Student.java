@@ -9,7 +9,7 @@ public class Student {
     private List<Integer> grades = new ArrayList<>();
 
     //CONSTRUCTOR
-    public Student(String name, long id, int[] grades){
+    public Student(String name, long id){
         this.name = name;
         this.id = id;
         //need to set arraylist otherwise nullpointer exception
