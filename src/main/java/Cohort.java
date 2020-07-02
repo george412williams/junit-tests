@@ -25,4 +25,8 @@ public class Cohort {
         return students;
     }
 
+//    public String findStudentById(long num){
+//        return getName();
+//    }
+
 }
